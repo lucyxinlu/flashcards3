@@ -1,14 +1,14 @@
 <! DOCTYPE html>
 <html>
-<head>
-<mata charset="utf-8">
+ <head>
+  <mata charset="utf-8">
 </head>
  <body>
-<p>Click the button to trigger a function.</p>
-  <p>Click the question first.</p>
+   <p>Click the button to trigger a function.</p>
+   <p>Click the question first.</p>
   
 
-<button id="b2"onclick="myFunction()">The question</button>
+ <button id="b2"onclick="myFunction()">The question</button>
 <button id="b3"onclick="button()">The answer</button>
 <p id="demo"></p>
 
@@ -27,13 +27,14 @@ function button(){
 <style>
  button {background-color: #00a7d0}
 button:hover {background-color: #ff7701}
-button:hover {
+button:hover span{
   display: none
 }
 
 button:hover:before {
   content: "click the question first:"
 }
+  </style>
   </body>
 </html>
 
