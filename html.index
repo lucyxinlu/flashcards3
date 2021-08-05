@@ -4,17 +4,6 @@
 <p>Click the button to trigger a function.</p>
   <p>Click the question first.</p>
   
-<button id="b2"onclick="myFunction()">The question</button>
-<button id="b3"onclick="button()">The answer</button>
-<p id="demo"></p>
-
-<table border="1">
- <tr>
-  <td οnmοuseοver="overShow()" οnmοuseοut="outHide()">The answer</td>
- </tr>
-</table>
-<div id="showDiv" style="position: absolute; background-color: white; border: 1px solid black;"></div>
-
 <script>
  <!--create a button with callback>
 function myFunction() {
@@ -39,6 +28,17 @@ function overShow() {
   showDiv.innerHTML = '';
  }
 </script>
+
+<button id="b2"onclick="myFunction()">The question</button>
+<button id="b3"onclick="button()">The answer</button>
+<p id="demo"></p>
+
+<table border="1">
+ <tr>
+  <td οnmοuseοver="overShow()" οnmοuseοut="outHide()">The answer</td>
+ </tr>
+</table>
+<div id="showDiv" style="position: absolute; background-color: white; border: 1px solid black;"></div>
 
 
   </body>
