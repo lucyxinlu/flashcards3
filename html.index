@@ -1,0 +1,22 @@
+!==
+<table border="1">
+ <tr>
+  <td οnmοuseοver="overShow()" οnmοuseοut="outHide()">文字内容2</td>
+ </tr>
+</table>
+<div id="showDiv" style="position: absolute; background-color: white; border: 1px solid black;"></div>
+<script>
+ function overShow() {
+  var showDiv = document.getElementById('showDiv');
+  showDiv.style.left = event.clientX;
+  showDiv.style.top = event.clientY;
+  showDiv.style.display = 'block';
+  showDiv.innerHTML = '鼠标停留显示内容2';
+ }
+ 
+ function outHide() {
+  var showDiv = document.getElementById('showDiv');
+  showDiv.style.display = 'none';
+  showDiv.innerHTML = '';
+ }
+</script>
