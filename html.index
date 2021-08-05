@@ -1,17 +1,36 @@
-!==
+<! DOCTYPE html>
+<html>
+ <body>
+<p>Click the button to trigger a function.</p>
+  <p>Click the question first.</p>
+  
+<button id="b2"onclick="myFunction()">The question</button>
+<button id="b3"onclick="button()">The answer</button>
+<p id="demo"></p>
+
 <table border="1">
  <tr>
-  <td οnmοuseοver="overShow()" οnmοuseοut="outHide()">文字内容2</td>
+  <td οnmοuseοver="overShow()" οnmοuseοut="outHide()">The answer</td>
  </tr>
 </table>
 <div id="showDiv" style="position: absolute; background-color: white; border: 1px solid black;"></div>
+
 <script>
- function overShow() {
+ <!--create a button with callback>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "what's the capital of China?; Who is the president of USA?; What's the name of your university?";
+  document.getElementById("b2").innerHTML = "To see the answer, you need to click the answer";
+}
+ <!--create another button to distinguish the"answer" and "question">
+function button(){
+  document.getElementById("b3").innerHTML="Beijing; Biden; CMU ";
+  }
+function overShow() {
   var showDiv = document.getElementById('showDiv');
   showDiv.style.left = event.clientX;
   showDiv.style.top = event.clientY;
   showDiv.style.display = 'block';
-  showDiv.innerHTML = '鼠标停留显示内容2';
+  showDiv.innerHTML = 'click question first';
  }
  
  function outHide() {
@@ -20,3 +39,8 @@
   showDiv.innerHTML = '';
  }
 </script>
+
+
+  </body>
+</html>
+
