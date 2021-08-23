@@ -1,4 +1,3 @@
-<script>
 class question{
 constructor(question,answer){
 this.question=question;
@@ -31,4 +30,4 @@ answer.push("Beijing","Biden","CMU");
 function button(){
  document.getElementById("demo").innerHTML=answer;}
 //Define the onlick event//
-</script>	
+	
