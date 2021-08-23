@@ -12,13 +12,13 @@ myFlashcards.push(new question('What is the name of your university?'));
  /*Create the question array*/
 
 	let i=0;
- function button(){
+ function myFunction(){
 	if(i<myFlashcards.length){
-document.getElementById("question").innerHTML=myFlashcards[i].question;	
+document.getElementById("b2").innerHTML=myFlashcards[i].question;	
 		 i++;
 	 } else if(i==myFlashcards.length){
 		 i=0;
-document.getElementById("question").innerHTML=myFlashcards[i].question;
+document.getElementById("b2").innerHTML=myFlashcards[i].question;
 		 i++;
 	 }
 	 
@@ -28,12 +28,7 @@ let answer=new Array();
 answer.push("Beijing","Biden","CMU");
 //Create the answer array//
 	
-function buttonClicked(event){
+function button(){
  document.getElementById("demo").innerHTML=answer;}
 //Define the onlick event//
-	
-function check(){
-	document.getElementById("alert").innerHTML='Click the question first';
- }//have the mouseover event and print a message to users//
-</script>
- 
+</script>	
